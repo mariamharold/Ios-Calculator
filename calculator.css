@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 5rem auto 1rem;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    width: 420px;
+    height: 90%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: black;
+    border: 1px solid black;
+}
+
+.number {
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.zero {
+    height: 90px;
+    width: 180px;
+    grid-template-areas: 1fr 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 1px solid black;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    padding-right: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.operator {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.math {
+    background-color: lightgray;
+}
+.container div{
+    cursor: pointer;
+}
+
+.number:hover, .operator:hover{
+    background-color: lightgray;
+    color: black;
+}
+.math:hover{
+    background-color: darkgoldenrod;
+    color: white;
+}
+.renk {
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
